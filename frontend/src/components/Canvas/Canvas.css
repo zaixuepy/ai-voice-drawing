@@ -1,0 +1,10 @@
+.canvas-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* Excalidraw 背景设为透明，由 canvas-body 层提供背景 */
+.canvas-container .excalidraw {
+  --color-background: transparent;
+}

@@ -1,0 +1,50 @@
+.api-key-config {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.api-key-trigger {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: var(--transition-fast);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+.api-key-trigger:hover {
+  background: var(--color-bg-hover);
+}
+
+.api-key-modal {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  width: 320px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-modal);
+  border: 1.5px solid var(--color-border);
+  padding: 20px;
+  z-index: var(--z-modal);
+}
+
+.api-key-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  outline: none;
+  font-family: var(--font-mono);
+  transition: var(--transition-fast);
+}
+.api-key-input:focus {
+  border-color: var(--color-primary-border);
+  box-shadow: 0 0 0 3px var(--color-primary-pale);
+}

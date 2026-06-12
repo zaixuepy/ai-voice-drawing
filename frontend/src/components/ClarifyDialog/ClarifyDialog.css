@@ -1,0 +1,36 @@
+.clarify-dialog {
+  margin: 8px 0;
+  padding: 14px;
+  background: var(--color-bg-warm);
+  border: 1.5px solid var(--color-border-warm);
+  border-radius: var(--radius-lg);
+}
+
+.clarify-dialog__question {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+}
+
+.clarify-dialog__options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clarify-dialog__option {
+  padding: 8px 12px;
+  background: var(--color-bg-card);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  text-align: left;
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+.clarify-dialog__option:hover {
+  border-color: var(--color-primary-border);
+  background: var(--color-primary-pale);
+}

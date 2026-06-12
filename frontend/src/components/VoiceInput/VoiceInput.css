@@ -1,0 +1,38 @@
+.input-area {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.voice-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-sketch-xs);
+  cursor: pointer;
+}
+.voice-btn:hover {
+  border-color: var(--color-primary-border);
+  color: var(--color-primary);
+  background: var(--color-primary-pale);
+  box-shadow: var(--shadow-sketch-sm);
+}
+.voice-btn:active {
+  transform: scale(0.94);
+  box-shadow: none;
+}
+
+.voice-btn--recording {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  border-color: #FF6B6B;
+  color: white;
+  animation: voice-pulse 1.8s ease-in-out infinite;
+}
