@@ -10,7 +10,18 @@
 
 无需鼠标键盘，仅通过语音对话完成绘图。核心差异化是**真正的语音对话**——AI 播报完自动开麦，用户直接开口打断，全程无需手操作。
 
-## 当前进度（Day 1）
+## 当前进度
+
+### Day 2（6月13日）
+
+- ✅ 小红书舆情爬虫 + 分析（基于 MediaCrawler 封装）
+- ✅ 3619 条用户评论/笔记情感分析：正面 44.3% / 中性 26.4% / 负面 29.3%
+- ✅ 词云可视化 + LDA 主题建模
+- ✅ 绘图工具痛点舆情分析报告
+
+详见 [舆情分析摘要](docs/analysis/analysis_summary.txt)
+
+### Day 1（6月12日）
 
 - ✅ 持续语音对话循环（自动开麦、打断 AI、语音选选项）
 - ✅ 6 层系统提示词架构（借鉴 Claude Code 设计模式）
@@ -167,13 +178,16 @@ docker-compose up -d
 
 - [PRD v1.0](docs/PRD_VoiceDrawing_v1.0.md) — 产品需求文档
 - [技术规格 v1.0](docs/TECH_SPEC_VoiceDrawing_v1.0.md) — 开发依据
-- [6月12日进度总结](docs/2026-06-12-进度总结.md) — Day 1 改进详情
-- [竞品深度研究报告](docs/语音AI绘图工具竞品深度研究报告.docx)
+- [6月12日进度总结](docs/2026-06-12-进度总结.md) — Day 1 核心改进
+- [竞品深度研究报告](docs/语音AI绘图工具竞品深度研究报告.docx) — 市场空白验证
+- [绘图工具痛点舆情分析报告](docs/画图工具痛点舆情分析报告.docx) — 小红书用户痛点挖掘
+- [舆情分析方法与产出](docs/analysis/) — 爬虫脚本、分析摘要、词云图
 
 ## 致谢
 
 - [Excalidraw](https://github.com/excalidraw/excalidraw) — 白板画布嵌入，许可证：MIT
 - [DeepSeek](https://deepseek.com) — AI 指令解析
+- [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — 小红书舆情数据爬取，许可证：MIT。本项目封装为自动爬虫+分析 skill，用于绘图工具用户痛点研究
 
 ## 许可
 
