@@ -80,11 +80,14 @@
 │   ├── routes/               # chat / analytics
 │   ├── db/                   # SQLite 初始化
 │   └── server.js
-├── docs/                     # 设计文档
-│   ├── PRD_VoiceDrawing_v1.0.md
-│   ├── TECH_SPEC_VoiceDrawing_v1.0.md
-│   ├── 2026-06-12-进度总结.md
-│   └── 语音AI绘图工具竞品深度研究报告.docx
+├── docs/                     # 设计文档（按产品思维链条组织）
+│   ├── 01-product/           # 产品文档（PRD、舆情报告）
+│   ├── 02-tech/              # 技术规格
+│   ├── 03-research/          # 调研分析（竞品报告、舆情分析）
+│   ├── 04-prompts/           # 多平台协作 Prompt（核心产品思维体现）
+│   ├── 05-external/          # 外部平台交付物（Kimi）
+│   └── 06-progress/          # 每日进度总结
+├── tools/                    # 工具脚本
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
@@ -176,12 +179,31 @@ docker-compose up -d
 
 ## 设计文档
 
-- [PRD v1.0](docs/PRD_VoiceDrawing_v1.0.md) — 产品需求文档
-- [技术规格 v1.0](docs/TECH_SPEC_VoiceDrawing_v1.0.md) — 开发依据
-- [6月12日进度总结](docs/2026-06-12-进度总结.md) — Day 1 核心改进
-- [竞品深度研究报告](docs/语音AI绘图工具竞品深度研究报告.docx) — 市场空白验证
-- [绘图工具痛点舆情分析报告](docs/画图工具痛点舆情分析报告.docx) — 小红书用户痛点挖掘
-- [舆情分析方法与产出](docs/analysis/) — 爬虫脚本、分析摘要、词云图
+### 产品文档
+- [PRD v1.0](docs/01-product/PRD_VoiceDrawing_v1.0.md) — 产品需求文档
+- [PRD v1.0 PDF](docs/01-product/PRD_VoiceDrawing_v1.0.pdf) — PDF 版本
+
+### 技术文档
+- [技术规格 v1.0](docs/02-tech/TECH_SPEC_VoiceDrawing_v1.0.md) — 开发依据
+
+### 调研分析
+- [竞品深度研究报告](docs/03-research/语音AI绘图工具竞品深度研究报告.docx) — Canva/Adobe/Excalidraw生态
+- [绘图工具痛点舆情分析报告](docs/03-research/画图工具痛点舆情分析报告.docx) — 小红书用户痛点挖掘
+- [舆情分析方法与产出](docs/03-research/analysis/) — 爬虫脚本、分析摘要、词云图
+
+### 多平台协作 Prompt（产品思维核心体现）
+- [Claude Code 开发指令](docs/04-prompts/01_ClaudeCode_Prompt.md) — STEP 1 骨架 + STEP 3 合并
+- [Manus 设计指令](docs/04-prompts/02_Manus_Prompt.md) — 视觉设计规范
+- [Kimi 辅助任务](docs/04-prompts/03_Kimi_Prompt.md) — API 文档和测试用例
+- [WorkBuddy 部署指令](docs/04-prompts/04_WorkBuddy_Prompt.md) — 腾讯云容器部署
+- [Claude Code Prompt 工程](docs/04-prompts/05_ClaudeCode_PromptEngineering.md) — promptBuilder/Validator/TestCases 设计
+
+### 外部平台交付物
+- [Kimi 交付：Excalidraw API 与测试用例](docs/05-external/Kimi_Delivery_Excalidraw_API_and_Prompt_TestCases.md)
+- [Kimi 补充：头脑风暴与技术建议](docs/05-external/Kimi_Supplement_Brainstorm.md)
+
+### 进度记录
+- [6月12日进度总结](docs/06-progress/2026-06-12-进度总结.md) — Day 1 核心改进
 
 ## 致谢
 
